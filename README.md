@@ -20,4 +20,4 @@ After months of planning and preperation I had finally come up with the final co
 Instead of a distributed model a more centralized one would be used. At the center of it all we would have the vehicle's ECU. A mixture of analog(sensor)signals and digital signals would be sampled by the ECU and three different CAN Buses would be utilized in order for it to communicate with the other systems of the vehicle.
 
 P22 General Datapath
-![alt text](https://github.com/[74HCT00N]/P22_ECU_Telemetry/Photos/P22 Datapaths-GENERAL DATAPATH.drawio.png)
+![P22 General Datapath](/Photos/P22 Datapaths-GENERAL DATAPATH.drawio.png)
