@@ -1,5 +1,8 @@
 # P22_ECU_Telemetry
-ECU and Telemetry System for Prom Racing's P22
+
+ECU and Telemetry System for Prom Racing's P22 FSE Vehicle
+
+![DSC_0186](https://user-images.githubusercontent.com/80124884/206901552-28a2b27d-7a98-4657-af19-d865792bd76d.jpg)
 
 # Introduction
 During my 3rd year of studies,I joined PROM Racing. After my first year with the team where I came to understand how an electric formula car is made,I finally had the chance to to design one myself. 
@@ -50,7 +53,7 @@ The NRF24L01 datasheet was straightforward and with little effort I was able to 
 
 The MCP2515 was a different story however. The datasheet was a hard read and I was not able to continue without the help of a logic analyzer.
 
-Thankfully, the [Saleae](https://www.saleae.com/) team had given to us the [Logic Pro 8](https://usd.saleae.com/products/saleae-logic-pro-8) as a sponsorship.
+Thankfully, the [Saleae](https://www.saleae.com/) team had given to us the [Logic Pro 8](https://usd.saleae.com/products/saleae-logic-pro-8) as a sponsorship which was perfect for decoding the SPI Bus. However, I must admit that I was a bit disappointed that there was not an official CAN decoder available.
 
 My setup
 
