@@ -17,4 +17,7 @@ And thus started a long proccess of carefully exmaning all of my options and fin
 # The Final Concept
 
 After months of planning and preperation I had finally come up with the final concept of the vehicle's architecture and consequently the ECUs main functionalities.
-Instead of a distributed model a more centralized one would be used. At the center of it all we would have the vehicles ECU.. A mixture of analog(sensor)signals and digital signals would be sampled by the ECU and three different CAN Buses would be utilized in order for it to communicate with the other systems of the vehicle.
+Instead of a distributed model a more centralized one would be used. At the center of it all we would have the vehicle's ECU. A mixture of analog(sensor)signals and digital signals would be sampled by the ECU and three different CAN Buses would be utilized in order for it to communicate with the other systems of the vehicle.
+
+P22 General Datapath
+![alt text](https://github.com/[74HCT00N]/P22_ECU_Telemetry/Photos/P22 Datapaths-GENERAL DATAPATH.drawio.png)
