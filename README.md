@@ -50,7 +50,7 @@ The NRF24L01 datasheet was straightforward and with little effort I was able to 
 
 The MCP2515 was a different story however. The datasheet was a hard read and I was not able to continue without the help of a logic analyzer.
 
-Thankfully, the [Saleae](https://www.saleae.com/) team had given to us the [Logic Pro 8](https://usd.saleae.com/products/saleae-logic-pro-8)as a sponsorship.
+Thankfully, the [Saleae](https://www.saleae.com/) team had given to us the [Logic Pro 8](https://usd.saleae.com/products/saleae-logic-pro-8) as a sponsorship.
 
 My setup
 
@@ -58,4 +58,23 @@ My setup
 
 ![20221211_122428](https://user-images.githubusercontent.com/80124884/206900310-88d6b2a8-bd74-42ec-83ee-dc1812ddd3ab.jpg)
 
+SPI Capturing
 
+![Screenshot_10](https://user-images.githubusercontent.com/80124884/206900398-c1bbcab4-7145-465e-bef5-35ff36b29489.png)
+
+![Screenshot_11](https://user-images.githubusercontent.com/80124884/206900410-a0394a50-6d46-4283-9494-271950b57a28.png)
+
+With the help of the Logic Pro 8 I was able to understand what was going wrong and get my SPI to work properly. I concluded that there were some bit timing issues that occured due to a bug on the master side of the bus, which I was able to resolve with a bit of trial and error. This enabled me to continue my work with the help of my debugger and further develop the drivers for the MCP2515. Eventually, everything worked out and I was able to finally conclude the development of my firmware.
+
+# RF Section
+
+For the RF part, thanks to the NTUA ECE Electronics Lab I was able to get my hands on a spectrum analyzer and a VNA. This enabled me to fully develop my RF PCB and achieve the desired impedance matching, Rx Sensitivity and Tx Power. The only issue that I was not able to resolve was the Tx power of the 1st harmonic. Had I had more time to work on the RF section I would have been able to resolve it. However, given the nature of Formula Student you need to work hard and you need to work fast, and as such I decided to focus on the next task rather than seek perfectiom.
+
+Spectrum Analyzer Capture
+
+![Screen_0033](https://user-images.githubusercontent.com/80124884/206900707-e34fe321-e087-4694-8fcb-fd547dc928fd.png)
+
+# Final Thoughts 
+
+In hindsight there were a lot of  mistakes both in the overall design and the firmware, however they were not detrimental to the overall functionality of the ECU and Telemetry. 
+The ECU and Telemetry project was a relative small part of my work but it was definitely a great learning experience. It was the first time I had to develop a schematic, the PCB, the firmware and assemble the PCB from ground zero and I am really proud that I was able to achieve all of the above in less than 2 months time.
