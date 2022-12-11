@@ -32,11 +32,11 @@ P22 ECU and Telemetry Datapath
 
 # Brief Hardware Overview
 
-ECU: An [STM32F407](https://www.st.com/resource/en/datasheet/dm00037051.pdf) was used as the main controller of the ECU. Though I would have prefered to use another MCU with more capabilities both in terms of processing power and peripherals I was not able to acquire one due to supply shortages. Thus, I had to resort to the aforementioned MCU. Even if the STM32F407 was not my first choice, with a clocking speed of 168 MHz, a dedicated FPU, 196 Kbytes of RAM, 3 ADCs and 2 CAN peripherals it was certainly more than capable to get the jobe done.
+ECU: An [STM32F407](https://www.st.com/resource/en/datasheet/dm00037051.pdf) was used as the main controller of the ECU. Though I would have prefered to use another MCU with more capabilities both in terms of processing power and peripherals I was not able to acquire one due to supply shortages. Thus, I had to resort to the aforementioned MCU. Even if the STM32F407 was not my first choice, with a clocking speed of 168 MHz, a dedicated FPU, 196 Kbytes of RAM, 3 ADCs and 2 CAN peripherals it was certainly more than capable to get the job done.
 
 A fairly simple Power Supply scheme was used in order to convert the 12V  low voltage power supply of the vehicle to 3.3V. The power supply features reverse voltage protection, overcurrent protection, esd/tvs protection and overvoltage protection.
 
-The all signals sampled by the ECU, both digital and analog were buffered through dedicated hardware in order to protect and isolate the MCU from the inputs.
+The signals sampled by the ECU, both digital and analog were buffered through dedicated hardware in order to protect and isolate the MCU from the inputs.
 
 Telemetry: A seperate MCU was used for the Telemetry part. The decision to use a seperate MCU was based on the fact that there were several analog and digital signals (mainly from sensors)that were of no concern for the ECU. Thus, an [STM32F103](https://www.st.com/resource/en/datasheet/stm32f103rb.pdf) was used in order to relieve the ECU from unnecessary functionalities. 
 
