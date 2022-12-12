@@ -53,8 +53,7 @@ The NRF24L01 datasheet was straightforward and with little effort I was able to 
 
 The MCP2515 was a different story however. The datasheet was a hard read and I was not able to continue without the help of a logic analyzer.
 
-Thankfully, the [Saleae](https://www.saleae.com/) team had given to us the [Logic Pro 8](https://usd.saleae.com/products/saleae-logic-pro-8) as a sponsorship which was perfect for decoding the SPI Bus. However, I must admit that I was a bit disappointed that there was not an official CAN decoder available.
-
+Thankfully, the [Saleae](https://www.saleae.com/) team had given to us the [Logic Pro 8](https://usd.saleae.com/products/saleae-logic-pro-8) as a sponsorship which was perfect for decoding the SPI Bus. 
 My setup
 
 ![20221211_122416](https://user-images.githubusercontent.com/80124884/206900327-efdb2ca8-d62e-4622-8598-cfe8a08b5db3.jpg)
@@ -81,3 +80,5 @@ Spectrum Analyzer Capture
 
 In hindsight there were a lot of  mistakes both in the overall design and the firmware, however they were not detrimental to the overall functionality of the ECU and Telemetry. 
 The ECU and Telemetry project was a relative small part of my work but it was definitely a great learning experience. It was the first time I had to develop a schematic, the PCB, the firmware and assemble the PCB from ground zero and I am really proud that I was able to achieve all of the above in less than 2 months time.
+
+Update: Apparently Saleae has a CAN decoder and I hadn't realized all this time...big oopsie
